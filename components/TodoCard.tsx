@@ -63,13 +63,13 @@ function TodoCard({
       </div>
 
       {imageUrl && (
-        <div className="relative h-full w-full rounded-b-md">
+        <div className="relative w-full rounded-b-md h-[200px] overflow-hidden">
           <Image
             src={imageUrl}
             alt="Task Image"
-            width={400}
-            height={200}
-            className="w-full object-contain rounded-b-md"
+            sizes="100%"
+            fill={true}
+            className="w-full object-contain rounded-b-md object-center"
           />
         </div>
       )}
